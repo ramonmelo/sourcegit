@@ -1,11 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
 <ResourceDictionary xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ResourceDictionary.MergedDictionaries>
-    <ResourceInclude Source="avares://SourceGit/Resources/Locales/en_US.axaml"/>
+    <ResourceInclude Source="avares://SourceGit/Resources/Locales/en_US.axaml" />
   </ResourceDictionary.MergedDictionaries>
-
   <x:String x:Key="Text.About" xml:space="preserve">Sobre</x:String>
   <x:String x:Key="Text.About.Menu" xml:space="preserve">Sobre o SourceGit</x:String>
   <x:String x:Key="Text.About.SubTitle" xml:space="preserve">Cliente Git GUI Livre e de Código Aberto</x:String>
+  <x:String x:Key="Text.AddToIgnore" xml:space="preserve">Adicionar arquivo(s) ao ignore</x:String>
+  <x:String x:Key="Text.AddToIgnore.Pattern" xml:space="preserve">Padrão:</x:String>
+  <x:String x:Key="Text.AddToIgnore.Storage" xml:space="preserve">Armazenar arquivo:</x:String>
   <x:String x:Key="Text.AddWorktree" xml:space="preserve">Adicionar Worktree</x:String>
   <x:String x:Key="Text.AddWorktree.Location" xml:space="preserve">Localização:</x:String>
   <x:String x:Key="Text.AddWorktree.Location.Placeholder" xml:space="preserve">Caminho para este worktree. Caminho relativo é suportado.</x:String>
@@ -17,42 +20,72 @@
   <x:String x:Key="Text.AddWorktree.WhatToCheckout.CreateNew" xml:space="preserve">Criar Novo Branch</x:String>
   <x:String x:Key="Text.AddWorktree.WhatToCheckout.Existing" xml:space="preserve">Branch Existente</x:String>
   <x:String x:Key="Text.AIAssistant" xml:space="preserve">Assietente IA</x:String>
+  <x:String x:Key="Text.AIAssistant.Regen" xml:space="preserve">GERAR NOVAMENTE</x:String>
   <x:String x:Key="Text.AIAssistant.Tip" xml:space="preserve">Utilizar IA para gerar mensagem de commit</x:String>
-  <x:String x:Key="Text.Apply" xml:space="preserve">Patch</x:String>
+  <x:String x:Key="Text.AIAssistant.Use" xml:space="preserve">APLICAR COMO MENSAGEM DE COMMIT</x:String>
+  <x:String x:Key="Text.App.Hide" xml:space="preserve">Esconder SourceGit</x:String>
+  <x:String x:Key="Text.App.ShowAll" xml:space="preserve">Mostrar Todos</x:String>
+  <x:String x:Key="Text.Apply" xml:space="preserve">Aplicar</x:String>
   <x:String x:Key="Text.Apply.File" xml:space="preserve">Arquivo de Patch:</x:String>
   <x:String x:Key="Text.Apply.File.Placeholder" xml:space="preserve">Selecione o arquivo .patch para aplicar</x:String>
   <x:String x:Key="Text.Apply.IgnoreWS" xml:space="preserve">Ignorar mudanças de espaço em branco</x:String>
   <x:String x:Key="Text.Apply.Title" xml:space="preserve">Aplicar Patch</x:String>
   <x:String x:Key="Text.Apply.WS" xml:space="preserve">Espaço em Branco:</x:String>
+  <x:String x:Key="Text.ApplyStash" xml:space="preserve">Aplicar arquivo temporário</x:String>
+  <x:String x:Key="Text.ApplyStash.DropAfterApply" xml:space="preserve">Deletar depois de aplicar</x:String>
+  <x:String x:Key="Text.ApplyStash.RestoreIndex" xml:space="preserve">Restaurar mudanças do indice</x:String>
+  <x:String x:Key="Text.ApplyStash.Stash" xml:space="preserve">Arquivo temporário:</x:String>
   <x:String x:Key="Text.Archive" xml:space="preserve">Arquivar...</x:String>
   <x:String x:Key="Text.Archive.File" xml:space="preserve">Salvar Arquivo Como:</x:String>
   <x:String x:Key="Text.Archive.File.Placeholder" xml:space="preserve">Selecione o caminho do arquivo de arquivo</x:String>
   <x:String x:Key="Text.Archive.Revision" xml:space="preserve">Revisão:</x:String>
   <x:String x:Key="Text.Archive.Title" xml:space="preserve">Arquivar</x:String>
   <x:String x:Key="Text.Askpass" xml:space="preserve">SourceGit Askpass</x:String>
+  <x:String x:Key="Text.Askpass.Passphrase" xml:space="preserve">Digite a senha:</x:String>
   <x:String x:Key="Text.AssumeUnchanged" xml:space="preserve">ARQUIVOS CONSIDERADOS SEM ALTERAÇÕES</x:String>
   <x:String x:Key="Text.AssumeUnchanged.Empty" xml:space="preserve">NENHUM ARQUIVO CONSIDERADO SEM ALTERAÇÕES</x:String>
+  <x:String x:Key="Text.Avatar.Load" xml:space="preserve">Carregar imagem...</x:String>
   <x:String x:Key="Text.Avatar.Refetch" xml:space="preserve">Atualizar</x:String>
   <x:String x:Key="Text.BinaryNotSupported" xml:space="preserve">ARQUIVO BINÁRIO NÃO SUPORTADO!!!</x:String>
+  <x:String x:Key="Text.Bisect">Bissecção</x:String>
+  <x:String x:Key="Text.Bisect.Abort">Abortar</x:String>
+  <x:String x:Key="Text.Bisect.Bad">Inválido</x:String>
+  <x:String x:Key="Text.Bisect.Detecting">Bissecção. O HEAD atual é válido ou inválido?</x:String>
+  <x:String x:Key="Text.Bisect.Good">Válido</x:String>
+  <x:String x:Key="Text.Bisect.Skip">Pular</x:String>
+  <x:String x:Key="Text.Bisect.WaitingForRange">Bissecção. Marque o commit atual como válido ou inválido e faça checkout em outro.</x:String>
   <x:String x:Key="Text.Blame" xml:space="preserve">Blame</x:String>
   <x:String x:Key="Text.BlameTypeNotSupported" xml:space="preserve">BLAME NESTE ARQUIVO NÃO É SUPORTADO!!!</x:String>
   <x:String x:Key="Text.BranchCM.Checkout" xml:space="preserve">Checkout ${0}$...</x:String>
   <x:String x:Key="Text.BranchCM.CompareWithCurrent" xml:space="preserve">Comparar com ${0}$</x:String>
   <x:String x:Key="Text.BranchCM.CompareWithWorktree" xml:space="preserve">Comparar com Worktree</x:String>
   <x:String x:Key="Text.BranchCM.CopyName" xml:space="preserve">Copiar Nome do Branch</x:String>
+  <x:String x:Key="Text.BranchCM.CustomAction" xml:space="preserve">Ação personalizada</x:String>
   <x:String x:Key="Text.BranchCM.Delete" xml:space="preserve">Excluir ${0}$...</x:String>
   <x:String x:Key="Text.BranchCM.DeleteMultiBranches" xml:space="preserve">Excluir {0} branches selecionados</x:String>
   <x:String x:Key="Text.BranchCM.FastForward" xml:space="preserve">Fast-Forward para ${0}$</x:String>
   <x:String x:Key="Text.BranchCM.FetchInto" xml:space="preserve">Buscar ${0}$ em ${1}$...</x:String>
   <x:String x:Key="Text.BranchCM.Finish" xml:space="preserve">Git Flow - Finalizar ${0}$</x:String>
   <x:String x:Key="Text.BranchCM.Merge" xml:space="preserve">Mesclar ${0}$ em ${1}$...</x:String>
+  <x:String x:Key="Text.BranchCM.MergeMultiBranches" xml:space="preserve">Mesclar os {0} branches selecionados no atual</x:String>
   <x:String x:Key="Text.BranchCM.Pull" xml:space="preserve">Puxar ${0}$</x:String>
   <x:String x:Key="Text.BranchCM.PullInto" xml:space="preserve">Puxar ${0}$ para ${1}$...</x:String>
   <x:String x:Key="Text.BranchCM.Push" xml:space="preserve">Subir ${0}$</x:String>
   <x:String x:Key="Text.BranchCM.Rebase" xml:space="preserve">Rebase ${0}$ em ${1}$...</x:String>
   <x:String x:Key="Text.BranchCM.Rename" xml:space="preserve">Renomear ${0}$...</x:String>
+  <x:String x:Key="Text.BranchCM.ResetToSelectedCommit" xml:space="preserve">Reset ${0}$ para ${1}$...</x:String>
+  <x:String x:Key="Text.BranchCM.SwitchToWorktree" xml:space="preserve">Mudar para ${0}$ (worktree)</x:String>
   <x:String x:Key="Text.BranchCM.Tracking" xml:space="preserve">Definir Branch de Rastreamento...</x:String>
   <x:String x:Key="Text.BranchCompare" xml:space="preserve">Comparação de Branches</x:String>
+  <x:String x:Key="Text.BranchTree.Ahead" xml:space="preserve">{0} commit(s) à frente</x:String>
+  <x:String x:Key="Text.BranchTree.AheadBehind" xml:space="preserve">{0} commit(s) à frente, {1} commit(s) à trás</x:String>
+  <x:String x:Key="Text.BranchTree.Behind" xml:space="preserve">{0} commit(s) à trás</x:String>
+  <x:String x:Key="Text.BranchTree.InvalidUpstream" xml:space="preserve">Inválido</x:String>
+  <x:String x:Key="Text.BranchTree.Remote" xml:space="preserve">REMOTO</x:String>
+  <x:String x:Key="Text.BranchTree.Status" xml:space="preserve">ESTADO</x:String>
+  <x:String x:Key="Text.BranchTree.Tracking" xml:space="preserve">MONITORANDO</x:String>
+  <x:String x:Key="Text.BranchTree.URL" xml:space="preserve">URL</x:String>
+  <x:String x:Key="Text.BranchTree.Worktree" xml:space="preserve">WORKTREE</x:String>
   <x:String x:Key="Text.Cancel" xml:space="preserve">CANCELAR</x:String>
   <x:String x:Key="Text.ChangeCM.CheckoutFirstParentRevision" xml:space="preserve">Resetar para Revisão Pai</x:String>
   <x:String x:Key="Text.ChangeCM.CheckoutThisRevision" xml:space="preserve">Resetar para Esta Revisão</x:String>
@@ -61,6 +94,9 @@
   <x:String x:Key="Text.ChangeDisplayMode.Grid" xml:space="preserve">Exibir como Lista de Arquivos e Diretórios</x:String>
   <x:String x:Key="Text.ChangeDisplayMode.List" xml:space="preserve">Exibir como Lista de Caminhos</x:String>
   <x:String x:Key="Text.ChangeDisplayMode.Tree" xml:space="preserve">Exibir como Árvore de Sistema de Arquivos</x:String>
+  <x:String x:Key="Text.ChangeSubmoduleUrl" xml:space="preserve">Mudar URL do Submódulo</x:String>
+  <x:String x:Key="Text.ChangeSubmoduleUrl.Submodule" xml:space="preserve">Submódulo:</x:String>
+  <x:String x:Key="Text.ChangeSubmoduleUrl.URL" xml:space="preserve">URL:</x:String>
   <x:String x:Key="Text.Checkout" xml:space="preserve">Checkout Branch</x:String>
   <x:String x:Key="Text.Checkout.Commit" xml:space="preserve">Checkout Commit</x:String>
   <x:String x:Key="Text.Checkout.Commit.Target" xml:space="preserve">Commit:</x:String>
@@ -68,7 +104,11 @@
   <x:String x:Key="Text.Checkout.LocalChanges" xml:space="preserve">Alterações Locais:</x:String>
   <x:String x:Key="Text.Checkout.LocalChanges.Discard" xml:space="preserve">Descartar</x:String>
   <x:String x:Key="Text.Checkout.LocalChanges.StashAndReply" xml:space="preserve">Stash &amp; Reaplicar</x:String>
+  <x:String x:Key="Text.Checkout.RecurseSubmodules" xml:space="preserve">Atualizar todos os submódulos</x:String>
   <x:String x:Key="Text.Checkout.Target" xml:space="preserve">Branch:</x:String>
+  <x:String x:Key="Text.Checkout.WarnLostCommits" xml:space="preserve">Seu HEAD atual contém commit(s) não conectado(s) a nenhum branch/tag! Deseja continuar?</x:String>
+  <x:String x:Key="Text.Checkout.WithFastForward" xml:space="preserve">Checkout &amp; Fast-Forward</x:String>
+  <x:String x:Key="Text.Checkout.WithFastForward.Upstream" xml:space="preserve">Fast-Forward para:</x:String>
   <x:String x:Key="Text.CherryPick" xml:space="preserve">Cherry-Pick</x:String>
   <x:String x:Key="Text.CherryPick.AppendSourceToMessage" xml:space="preserve">Adicionar origem à mensagem de commit</x:String>
   <x:String x:Key="Text.CherryPick.Commit" xml:space="preserve">Commit(s):</x:String>
@@ -640,4 +680,7 @@
   <x:String x:Key="Text.Worktree.Lock" xml:space="preserve">Bloquear</x:String>
   <x:String x:Key="Text.Worktree.Remove" xml:space="preserve">Remover</x:String>
   <x:String x:Key="Text.Worktree.Unlock" xml:space="preserve">Desbloquear</x:String>
+  <x:String x:Key="Text.Clone.RecurseSubmodules" xml:space="preserve">Inicialize e atualize submódulos</x:String>
+  <x:String x:Key="Text.CommitCM.CopyAuthor" xml:space="preserve">Autor</x:String>
+  <x:String x:Key="Text.CommitCM.CopyCommitMessage" xml:space="preserve">Mensagem</x:String>
 </ResourceDictionary>
